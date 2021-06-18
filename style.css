@@ -1,0 +1,48 @@
+.grid {
+  display: grid;
+}
+.grid--columns {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.grid--fit {
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.flex {
+  display: flex;
+}
+.flex--column {
+  flex-direction: column;
+}
+
+.btn {
+  color: white;
+  background-color: #222;
+  margin: 0px;
+  padding: 10px;
+}
+.btn:hover {
+  border: 1px solid lightgrey;
+}
+.btn:active {
+  color: #222;
+  border-color: lightgray;
+  background-color: lightgray;
+}
+
+.display {
+  min-height: 25px;
+  color: white;
+  background-color: #322f2f;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.calc-box {
+  max-width: fit-content;
+  max-height: fit-content;
+  background-color: grey;
+  font-family: arial;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic JavaScript Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="calc-box">
+     <!-- Calculator Display -->
+        <div id="display-box" class="display"></div>
+
+        <!-- Button Grid-->
+        <div class="flex flex--column">
+            <div class="grid grid--columns grid--fit">
+                <button class="btn input-btn" value="1">1</button>
+                <button class="btn input-btn" value="2">2</button>
+                <button class="btn input-btn" value="3">3</button>
+                <button class="btn input-btn" value="4">4</button>
+                <button class="btn input-btn" value="5">5</button>
+                <button class="btn input-btn" value="6">6</button>
+                <button class="btn input-btn" value="7">7</button>
+                <button class="btn input-btn" value="8">8</button>
+                <button class="btn input-btn" value="9">9</button>
+                <button class="btn input-btn" value="0">0</button>    
+            
+                <button class="btn input-btn" value="+">+</button>
+                <button class="btn input-btn" value="-">-</button>
+                <button class="btn input-btn" value="/">/</button>
+                <button class="btn input-btn" value="*">*</button>
+
+                <button class="btn clear-btn" value=" ">C</button>
+            </div>
+
+
+            <div>
+            <button class="btn eval-btn">=</button>
+            </div>
+        </div>
+        
+      
+    
+    <script src="calculator.js"></script>
+</body>
+</html>
+
+<!-- // not super happy with styling, I want to make a grid-area-template box like that funky challenge and reaarange things to look like a phone calculator, need to stretch the buttons somehow? -->
