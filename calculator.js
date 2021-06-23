@@ -23,14 +23,13 @@ const handleButtonClick = (event) => {
 };
 
 const handleClear= (event) => {
-    // Calling updateDisplayBox function
     clearDisplayBox(event.target.value);
 };
 
 // equals button evaluation function
 const handleEval = (event) => {
     const calcDisplay = document.getElementById("display-box");
-    const splitCalc = calcDisplay.innerHTML.split(/([+=*/])/);
+    const splitCalc = calcDisplay.innerHTML.split(/([+*-/])/);
     console.log(splitCalc);
     console.log(typeof(splitCalc));
     // const findOperand = splitCalc.filter(i => typeof(i) === !"number");

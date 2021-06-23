@@ -46,3 +46,7 @@
   background-color: grey;
   font-family: arial;
 }
+
+.eval--btn {
+  width: 100%;
+}
