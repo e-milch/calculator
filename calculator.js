@@ -16,9 +16,24 @@ const clearDisplayBox = (text) => {
     calcDisplay.innerHTML = text;
 }
 
-// Defining a function to be called when user clicks an input button
+// Defining a function to be called when user clicks an input button, with checks disallowing operators as first input or consecutive
 const handleButtonClick = (event) => {
-    // Calling updateDisplayBox function
+    const calcDisplay = document.getElementById("display-box").innerHTML;
+    
+    const inputToFloat = parseFloat(event.target.value);
+    if (isNaN(inputToFloat) && calcDisplay.length === 0) {
+        alert("First input must be a number");
+        return;
+    } 
+        
+    const lastInput = calcDisplay[calcDisplay.length - 1];
+    if (isNaN(lastInput) && isNaN(inputToFloat)) {
+        alert("Number must come after operator");
+        return;
+    } 
+
+    console.log(calcDisplay.length);
+
     updateDisplayBox(event.target.value);
 };
 
@@ -32,11 +47,8 @@ const handleEval = (event) => {
     const splitCalc = calcDisplay.innerHTML.split(/([+*-/])/);
     console.log(splitCalc);
     console.log(typeof(splitCalc));
-    // const findOperand = splitCalc.filter(i => typeof(i) === !"number");
-    // console.log(findOperand);
-
-    // const calc = (findOperand, splitCalc) => {
-    //     let result = ""
+    
+        // 
     if (splitCalc[1] == "+") {
        evalDisplayBox((parseFloat(splitCalc[0]) + parseFloat(splitCalc[2])));
     } else if (splitCalc[1] == "-") {
@@ -46,21 +58,6 @@ const handleEval = (event) => {
     } else if (splitCalc[1] == "*") {
         evalDisplayBox(parseFloat(splitCalc[0]) * parseFloat(splitCalc[2]))
     }
-    
-
-    // code I was playing around with
-    // const calcString = splitCalc.join("");
-    // console.log(calcString);
-    // console.log(typeof(calcString));
-    
-
-    // const calc = splitCalc.reduce((acc , i) => ;
-    // console.log(calc)
-    // console.log(typeof(calc));
-    // const calcString = splitCalc.join(" ");
-    // console.log(calcString);
-    // parseFloat(calcString);
-    // console.log(calcString);
    
 }
 

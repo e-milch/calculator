@@ -9,36 +9,39 @@
 
 </head>
 <body>
-    <div class="calc-box">
+    <div class="calc-box grid--fit">
      <!-- Calculator Display -->
         <div id="display-box" class="display"></div>
 
         <!-- Button Grid-->
-        <div class="flex flex--column">
-            <div class="grid grid--columns grid--fit">
-                <button class="btn input-btn" value="1">1</button>
-                <button class="btn input-btn" value="2">2</button>
-                <button class="btn input-btn" value="3">3</button>
-                <button class="btn input-btn" value="4">4</button>
-                <button class="btn input-btn" value="5">5</button>
-                <button class="btn input-btn" value="6">6</button>
-                <button class="btn input-btn" value="7">7</button>
-                <button class="btn input-btn" value="8">8</button>
-                <button class="btn input-btn" value="9">9</button>
-                <button class="btn input-btn" value="0">0</button>    
+        <div class="">
+            <!--  -->
+            <div class="grid grid--fit">
+                <button class="btn btn-one input-btn" value="1">1</button>
+                <button class="btn btn-two input-btn" value="2">2</button>
+                <button class="btn btn-three input-btn" value="3">3</button>
+                <button class="btn btn-four input-btn" value="4">4</button>
+                <button class="btn btn-five input-btn" value="5">5</button>
+                <button class="btn btn-six input-btn" value="6">6</button>
+                <button class="btn btn-seven input-btn" value="7">7</button>
+                <button class="btn btn-eight input-btn" value="8">8</button>
+                <button class="btn btn-nine input-btn" value="9">9</button>
+                <button class="btn btn-nought input-btn" value="0">0</button>    
             
-                <button class="btn input-btn" value="+">+</button>
-                <button class="btn input-btn" value="-">-</button>
-                <button class="btn input-btn" value="/">/</button>
-                <button class="btn input-btn" value="*">*</button>
+                <button class="btn btn-plus input-btn" value="+">+</button>
+                <button class="btn btn-minus input-btn" value="-">-</button>
+                <button class="btn btn-divide input-btn" value="/">/</button>
+                <button class="btn btn-multi input-btn" value="*">*</button>
 
-                <button class="btn clear-btn" value="">C</button>
+                <button class="btn btn-erase clear-btn" value="">C</button>
+
+                <button class="btn btn-equals eval-btn">=</button>
             </div>
 
 
-            <div>
-            <button class="btn eval-btn">=</button>
-            </div>
+        
+            
+            
         </div>
         
       
@@ -46,5 +49,3 @@
     <script src="calculator.js"></script>
 </body>
 </html>
-
-<!-- // not super happy with styling, I want to make a grid-area-template box like that funky challenge and reaarange things to look like a phone calculator, need to stretch the buttons somehow? -->

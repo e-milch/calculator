@@ -1,60 +1,24 @@
-.grid {
-    display: grid;
-
-    &--columns {
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-        
-    }
-
-    &--fit {
-        max-width: fit-content;
-        max-height: fit-content;
-    }
-}
-
-.flex {
-    display: flex;
-
-    &--column {
-        flex-direction: column;
-    }
-    
-}
-
-.btn {
-    color: white;
-    background-color: #222;
-    margin: 0px;
-    padding: 10px;
-
-    &:hover {
-        border: 1px solid lightgrey;
-    }
-
-    &:active {
-        color: #222;
-        border-color: lightgray;
-        background-color: lightgray;
-    }
-
-}
+@import 'grid';
+@import 'btn';
 
 .display {
-    min-height: 25px;
-    color: white;
+    min-height: 10vh;
+    color: peru;
     background-color: rgb(50, 47, 47);
     display: flex;
     align-items: center;
     justify-content: left;
+    grid-area: display;
+    font-size: 40px;
+    text-align: right;
+    vertical-align: bottom;
 }
 
 .calc-box {
-    max-width: fit-content;
-    max-height: fit-content;
     background-color: grey;
     font-family: arial;
 }
 
-.eval--btn {
+.eval-btn {
     width: 100%;
 }

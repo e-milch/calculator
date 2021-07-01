@@ -1,0 +1,14 @@
+.grid {
+    display: grid;
+    grid-template-areas: 
+    'display display display display display'
+    'seven eight nine plus equals'
+    'four five six minus equals'
+    'one two three multi equals'
+    'erase nought nought divide equals'
+    ;
+
+    &--fit {
+        max-width: fit-content;
+    }
+}

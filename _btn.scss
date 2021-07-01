@@ -1,0 +1,27 @@
+$btn-values: one, two, three, four, five, six, seven, eight, nine, nought, plus, minus, divide, multi, erase, equals;
+
+.btn {
+    color: white;
+    background-color: #222;
+    margin: 0px;
+    padding: 10px;
+    font-size: 30px;
+
+    &:hover {
+        border: 1px solid lightgrey;
+    }
+
+    &:active {
+        color: #222;
+        border-color: lightgray;
+        background-color: lightgray;
+    }
+
+    @each $value in $btn-values {
+        &-#{$value} {
+            grid-area: $value;
+        }
+    }
+
+
+}
